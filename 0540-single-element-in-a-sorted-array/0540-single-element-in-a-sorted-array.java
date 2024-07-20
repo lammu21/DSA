@@ -27,7 +27,9 @@ int start =1,end=nums.length-2;
              return nums[mid];
         }
 // triming the search space by half 
-  
+/*  identifing first half (two cases)
+  if mid is even -> mid+1 should equal element 
+  if mid is odd -> mid-1 should equal element */
 
        if(mid%2==0&&nums[mid]==nums[mid+1]||mid%2!=0&&nums[mid]==nums[mid-1]){
           start=mid+1;
