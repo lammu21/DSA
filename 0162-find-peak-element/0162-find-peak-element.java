@@ -32,7 +32,7 @@ class Solution {
             start=mid+1;
         }
 // if mid is in decreasing side we've already crossed mid so elimating right half
-        else if(nums[mid-1]>nums[mid])
+        else //if(nums[mid-1]>nums[mid])
         {
             end=mid-1;
         }
