@@ -25,7 +25,8 @@ class Solution {
             return mid;
         }
 
-// if mid is not peak checking whther mid is in increasing side if it is elimating left half
+// if mid is not peak checking whther mid is in increasing side if it is in increasing half,
+//  elimating left half
 
         else if(nums[mid-1]<nums[mid]){
             start=mid+1;
