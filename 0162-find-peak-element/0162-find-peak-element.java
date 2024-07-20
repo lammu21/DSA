@@ -19,12 +19,18 @@ class Solution {
        while(start<=end){
         int mid =start+(end-start)/2;
 
+//  check if mid is peak
+
         if(nums[mid]>nums[mid-1]&&nums[mid]>nums[mid+1]){
             return mid;
         }
+
+// if mid is not peak checking whther mid is in increasing side if it is elimating left half
+
         else if(nums[mid-1]<nums[mid]){
             start=mid+1;
         }
+// if mid is in decreasing side we've already crossed mid so elimating right half
         else {
             end=mid-1;
         }
