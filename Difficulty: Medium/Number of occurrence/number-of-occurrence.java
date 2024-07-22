@@ -31,11 +31,14 @@ public class Main {
 // } Driver Code Ends
 
 
-//User function Template for Java
 
 
 
 class Solution {
+    
+    // Previous problem we find first and last occurence of given number 
+    // Here in this prblem we are reusing the code in order to count the number occurences
+    
     int count(int[] arr, int n, int x) {
         // code here
         int first=first(arr,x);
@@ -44,6 +47,10 @@ class Solution {
             return 0;
         }
         int last=last(arr,x);
+// only difference is here in unlike previous problem we're not
+// returning array of first and last occurence
+
+// we're return last occurrence -first occurrence +1 which in turn equals to number occurences
         
         return last-first+1;
         
