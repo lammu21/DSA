@@ -1,4 +1,6 @@
 class Solution {
+
+    // Regular binary search 
     public int search(int[] nums, int target) {
         int len=nums.length;
         int start=0;
