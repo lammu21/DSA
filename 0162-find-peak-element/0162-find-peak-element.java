@@ -1,4 +1,5 @@
 class Solution {
+    // binary search modification 
     public int findPeakElement(int[] nums) {
 
         int n=nums.length;
