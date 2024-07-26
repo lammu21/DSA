@@ -1,4 +1,6 @@
 class Solution {
+
+    // revise again comment are not clear
     public int singleNonDuplicate(int[] nums) {
 //  Edge case to check if array with one element 
         if(nums.length==1){
@@ -27,9 +29,9 @@ int start =1,end=nums.length-2;
              return nums[mid];
         }
 // triming the search space by half 
-/*  identifing first half (two cases)
-  if mid is even -> mid+1 should equal element 
-  if mid is odd -> mid-1 should equal element */
+/*  identifing first half means until single element  (two cases)
+  if mid is even -> mid+1 should equals to mid 
+  if mid is odd -> mid-1 should equals to mid */
 
        if(mid%2==0&&nums[mid]==nums[mid+1]||mid%2!=0&&nums[mid]==nums[mid-1]){
           start=mid+1;
