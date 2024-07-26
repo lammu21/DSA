@@ -29,6 +29,7 @@ class GFG {
 // User function Template for Java
 
 class Solution {
+    // finding smallest element's index, that will be your rotation point 
     public int findKRotation(List<Integer> arr) {
         // Code here
         int start=0;
@@ -40,23 +41,34 @@ class Solution {
         
         while(start<=end){
             
-              // If the array is already sorted (not rotated at all)
-            if (arr.get(start) <= arr.get(end)) {
-                if (arr.get(start) < min) {
-                    min = arr.get(start);
-                    index = start;
+// checking if array is rotated or not 
+            
+        if(arr.get(start)<=arr.get(end)){
+                if(arr.get(start)<min){
+                   min=arr.get(start);
+// updated start index as rotation point break out of method
+                   index=start;
                 }
                 break;
-            }
-          int mid = start + (end - start) / 2;
+        }
+     
+            int mid=start+(end-start)/2;
+ // below if is check whether first half (start to mid ) is sorted or not
             
             if(arr.get(start)<=arr.get(mid)){
+// if first half sorted we pick start and compare it with min, if start is
+// smaller we consider it as smallest until now,store it's index  and we discard first half,
+// because if first half is sorted start will be the minimum, we dont have to
+// check for smallest in sorted first half
                 if(arr.get(start)<min){
                    min=arr.get(start);
                    index=start;
                 }
                  start=mid+1;
             }
+ // else second half sorted, we pick mid and compare it with min, if mid is
+// smaller we consider it as smallest until now,,store it's index   we discard second half, because
+// there no point to check for smallest in sorted, mid will be smallest
             else {
                 if(arr.get(mid)<min){
                    min=arr.get(mid);
