@@ -18,25 +18,30 @@ class Solution {
 
             if (nums[start] <= nums[mid]) {
 
-                // below if is to check target in the range of start and mid, if yes discard second half i.e.,after mid
+                // below if is to check target in the range of start and mid, if yes discard
+                // second half i.e.,after mid
 
                 if (nums[start] <= target && target <= nums[mid]) {
                     end = mid - 1;
                 }
-                // below else is to checkk if doesn't exist in first half, discard first half before mid
+                // below else is to checkk if doesn't exist in first half, discard first half
+                // before mid
                 else {
                     start = mid + 1;
                 }
             }
-            // below else is to if first half is not sorted second part must be sorted for an rotated sorted array
+            // below else is to if first half is not sorted second part must be sorted for
+            // an rotated sorted array
 
             else {
-                // below if is to check target in the range of mid and end, if yes discard first half i.e.,before mid
+                // below if is to check target in the range of mid and end, if yes discard first
+                // half i.e.,before mid
 
                 if (nums[mid] <= target && target <= nums[end]) {
                     start = mid + 1;
                 }
-                // below else is to check  if doesn't exist in second half, discard second half after mid.
+                // below else is to check if doesn't exist in second half, discard second half
+                // after mid.
                 else {
                     end = mid - 1;
                 }
