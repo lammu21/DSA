@@ -2,6 +2,7 @@ class Solution {
     // binary search with check condition
     public boolean isPerfectSquare(int num) {
 
+// long being used for to tackle larger num value
         long start = 1;
         long end = num;
 
