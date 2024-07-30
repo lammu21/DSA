@@ -68,6 +68,7 @@ class Solution
               return 2;
              }
                 
+     // this fails why it fails, debug on daily or weekly or monthly revision 
             // else if(ans==m){
             //   return 1;
             // }
