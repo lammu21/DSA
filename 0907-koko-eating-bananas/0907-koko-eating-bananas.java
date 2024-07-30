@@ -1,4 +1,8 @@
 class Solution {
+
+    // next day revision is done 
+
+    // we know ans range that's why using binary search 
     public int minEatingSpeed(int[] piles, int h) {
         int start = 1;
         int end = max_of_piles(piles);
