@@ -28,7 +28,10 @@ class GFG
 //User function Template for Java
 
 class Solution
-{
+{     
+    //  next day revision done 
+    
+    // we know the range, in which answer lies that's why using binary search
     public int NthRoot(int n, int m)
     {
         // code here
@@ -38,7 +41,10 @@ class Solution
         while(start<=end){
             int mid = start +(end-start)/2;
             int Nth_mid= find_nth_mid(mid,m,n);
-            
+            /*function which return 
+              0, means mid^n < m
+              1, means mid^n==m
+              2, means mid^n>m*/
             if(Nth_mid==1){
                 return mid;
             }
@@ -54,24 +60,26 @@ class Solution
         
     }
     public int find_nth_mid(int mid, int m,int n){
-        // int ans=1;
-        // for(int i=1;i<=n;n++){
-        //     ans=ans*mid;
-        //     if (ans>m){
-        //         return 2;
-        //     }
-        // }
-        // if(ans==m){
-        //     return 1;
-        // }
-        // return 0;
-        
-        long ans = 1;
-        for (int i = 1; i <= n; i++) {
-            ans = ans * mid;
-            if (ans > m) return 2;
+        long ans=1;
+        // ans is to store mid^n value 
+        for(int i=1;i<=n;i++){
+            ans=ans*mid;
+             if (ans>m){
+              return 2;
+             }
+                
+            // else if(ans==m){
+            //   return 1;
+            // }
+            
         }
-        if (ans == m) return 1;
+         if(ans==m){
+              return 1;
+         }    
+             
         return 0;
-    }
+        }
+       
+        
+
 }
