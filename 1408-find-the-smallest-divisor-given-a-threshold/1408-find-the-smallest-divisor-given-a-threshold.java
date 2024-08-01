@@ -13,18 +13,20 @@ class Solution {
         
        
          int end = max;
+         int result=-1;
          while(start<=end){
             int mid= start+(end-start)/2;
             int sum=  sumOfDivisorByMid(nums,mid);
            
             if(sum<=threshold){
+                result =mid;
                end=mid-1;
             }
             else {
                 start=mid+1;
             }
          }
-         return start;
+         return result;
         
     }
     public static int sumOfDivisorByMid(int[]nums, int mid){
