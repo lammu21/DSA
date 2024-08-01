@@ -1,13 +1,8 @@
 class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
-        // int sum=0;
+
         int n=nums.length;
-        // for(int i=0;i<n;i++){
-        //      sum=sum+nums[i];
-        // } 
-        // if(sum<threshold){
-        //     return 1;
-        // }
+       
          
          int start=1;
          int max=Integer.MIN_VALUE;
