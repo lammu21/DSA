@@ -15,9 +15,9 @@ class Solution {
          int end = max;
          while(start<=end){
             int mid= start+(end-start)/2;
-            sumOfDivisorByMid(nums,mid);
+            int sum=  sumOfDivisorByMid(nums,mid);
            
-            if(sumOfDivisorByMid(nums,mid)<=threshold){
+            if(sum<=threshold){
                end=mid-1;
             }
             else {
