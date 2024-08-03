@@ -24,14 +24,18 @@ class Solution {
 
         return start;
     }
+
     public int calculateDaysReqToMid(int[] weights, int capacity){
-        int days=1 ,load=0;
+        int days=1; //first day
+        int load=0;
           for (int i = 0; i < weights.length; i++) {
-            if(load+weights[i]>capacity){
-                days++;
-                load=weights[i];
+            if(load+weights[i]>capacity){// if load is greater than capacity 
+                days++;// load will be carry on another day 
+                load=weights[i];// load will be reset to zero and add up with weight[i],
+                
             }
             else{
+                // else load is doesn't exceed  capacity load is add up with weight[i]
                 load+=weights[i];
             }
           }
