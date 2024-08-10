@@ -14,7 +14,8 @@ class Solution {
             }
              end+=nums[i];
         }
-        System.out.println(end);
+        // System.out.println(end);
+
         if(k==1){
             return end;
         }
