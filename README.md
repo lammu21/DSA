@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/lammu21/Problem_Sloving/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/lammu21/Problem_Sloving/tree/master/0162-find-peak-element) |
+| [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
 | [0540-single-element-in-a-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/lammu21/Problem_Sloving/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/lammu21/Problem_Sloving/tree/master/0907-koko-eating-bananas) |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/lammu21/Problem_Sloving/tree/master/0162-find-peak-element) |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
+| [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
 | [0540-single-element-in-a-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/lammu21/Problem_Sloving/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/lammu21/Problem_Sloving/tree/master/0907-koko-eating-bananas) |
@@ -48,4 +50,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
+## Greedy
+|  |
+| ------- |
+| [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
 <!---LeetCode Topics End-->
