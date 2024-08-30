@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
 ## Dynamic Programming
 |  |
@@ -68,4 +69,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/lammu21/DSA/tree/master/0004-median-of-two-sorted-arrays) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
