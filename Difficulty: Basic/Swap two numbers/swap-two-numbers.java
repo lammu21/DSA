@@ -29,8 +29,8 @@ class Solution{
         // code here
         ArrayList <Integer> list=new ArrayList<>();
         a=a^b;
-        b=a^b;
-        a=a^b;
+        b=a^b;// (a^b)^b since a=a^b Xor of same value is zero so b=a
+        a=a^b; //(a^b)^a since a=a^b and b=a Xor of same value is zero so a=b;
         list.add(a);
         list.add(b);
         
