@@ -29,13 +29,10 @@ class Solution {
     static void bitManipulation(int num, int i) {
         // code here
         
-        System.out.print(((num>>i-1)&1)+" "+((num|(1<<i-1)))+" "+((num&~(1<<i-1))));
+        System.out.print(((num>>i-1)&1) //acutally to get bit, it should be (num>>1) &1 but here instex starts from 1 i.e., -1
+                         +" "+((num|(1<<i-1))) //to set bit, it should be num|(1<<i) but here instex starts from 1 i.e., -1
+                         +" "+((num&~(1<<i-1))));//to clear bit, it should be num&~(1<<i) but here instex starts from 1 i.e., -1
+        //clear bit is confusing 
         
-        //   System.out.print((num|(1<<i-1)));
-        //   System.out.print((num&~(1<<i-1)));
-        
-        
-        
-        // num>>i&
     }
 }
