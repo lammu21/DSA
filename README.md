@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/lammu21/DSA/tree/master/0007-reverse-integer) |
+| [0009-palindrome-number](https://github.com/lammu21/DSA/tree/master/0009-palindrome-number) |
 | [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
 ## Dynamic Programming
