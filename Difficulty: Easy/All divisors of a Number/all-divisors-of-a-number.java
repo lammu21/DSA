@@ -34,6 +34,7 @@ class Solution {
         // }
         
         // Optimal Approach
+        
         ArrayList <Integer> list = new ArrayList<>();
         for(int i=1;i*i<=n;i++)
         {
@@ -53,6 +54,19 @@ class Solution {
             System.out.print(list.get(j)+" ");
         }
         
+        
+        // Gemini code 
+        // for (int i = 1; i <= Math.sqrt(n); i++) {
+        //     if (n % i == 0) {
+        //         System.out.print(i + " ");
+
+        //         // Check if i is a perfect square of N
+        //         if (i != n / i) {
+        //             System.out.print(n / i + " ");
+        //         }
+        //     }
+        // }
+
         
     }
 }
