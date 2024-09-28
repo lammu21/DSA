@@ -37,10 +37,15 @@ class Solution {
                 }
 
             }
+
+            // start of for -ve powers 
             if(n<0){
                 result = 1.0/result;
                 return result;
             }
+           //  end of for -ve powers 
+
+
             return result;
         }
 
