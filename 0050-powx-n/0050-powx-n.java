@@ -26,11 +26,15 @@ class Solution {
             int m=Math.abs(n) ;
             double result=1.0;
             while(m>0){
-                if(m%2==1){
-                    result*=x;
+                 if(m%2==1){    
+                //if power is odd 
+                    result*=x; 
+             
                     m=m-1;
+               //pick power-1 and multiple it to result 
                 }
                 else{
+                    // if power is even divide power by 2 and multiple X*X
                   
                     m=m/2;
                     x*=x;
