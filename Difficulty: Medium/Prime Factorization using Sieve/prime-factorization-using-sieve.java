@@ -33,6 +33,7 @@ class Solution {
     static void sieve() {}
 
     static List<Integer> findPrimeFactors(int N) {
+        // code here
          List<Integer> primeFactors = new ArrayList<>();
         boolean[] isPrime = new boolean[N + 1];
 
@@ -59,7 +60,6 @@ class Solution {
         }
 
         return primeFactors;
-    }
-  
     
+    }
 }
