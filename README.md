@@ -71,11 +71,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/lammu21/DSA/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
+| [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/lammu21/DSA/tree/master/1370-count-number-of-nice-subarrays) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
+| [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 ## Greedy
 |  |
 | ------- |
@@ -107,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0050-powx-n](https://github.com/lammu21/DSA/tree/master/0050-powx-n) |
 | [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
+| [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 ## Backtracking
 |  |
 | ------- |
@@ -203,4 +206,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/lammu21/DSA/tree/master/0102-binary-tree-level-order-traversal) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
