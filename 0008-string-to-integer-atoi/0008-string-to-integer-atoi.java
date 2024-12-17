@@ -14,7 +14,7 @@ class Solution {
         if(s.charAt(0)=='-') sign=-1;
         
         int MAX = Integer.MAX_VALUE, MIN = Integer.MIN_VALUE;
-        int i= (s.charAt(0)=='+'|| s.charAt(0)=='-')?1:0;
+        int i= (s.charAt(0)=='-'|| s.charAt(0)=='+')?1:0;
         while(i<s.length()){
             if(s.charAt(i)==' '|| !Character.isDigit(s.charAt(i))) break;
             // if(s.charAt(i) == ' ' || !Character.isDigit(s.charAt(i))) break;
