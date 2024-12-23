@@ -28,6 +28,8 @@ System.out.println("~");
 
 /*Complete the function below*/
 class GfG {
+    // Time complexity - O(N^2)
+    // Space Complexity O(N)
     public Stack<Integer> sort(Stack<Integer> s) {
         // add code here.
         if(!s.isEmpty()){
