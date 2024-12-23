@@ -28,37 +28,25 @@ System.out.println("~");
 
 /*Complete the function below*/
 class GfG {
-    public Stack<Integer> sort(Stack<Integer> stack) {
+    public Stack<Integer> sort(Stack<Integer> s) {
         // add code here.
-                if (!stack.isEmpty()) {
-            // Remove the top element
-            int top = stack.pop();
-
-            // Sort the remaining stack
-            sort(stack);
-
-            // Insert the top element back in sorted order
-            sortedInsert(stack, top);
-           
+        if(!s.isEmpty()){
+            int top = s.pop();
+            sort(s);
+            sortInsert(s,top);
         }
-         return stack;
+        return s;
+        
     }
-
-    
-    
-        private static void sortedInsert(Stack<Integer> stack, int element) {
-        // Base case: If stack is empty or the top element is less than the element to be inserted
-        if (stack.isEmpty() || stack.peek() < element) {
-            stack.push(element);
-        } else {
-            // Remove the top element
-            int top = stack.pop();
-
-            // Recur for the remaining stack
-            sortedInsert(stack, element);
-
-            // Insert the top element back
-            stack.push(top);
+    public void sortInsert(Stack<Integer> s, int element){
+        if(s.isEmpty()||s.peek()<element){
+            s.push(element);
+        }
+        else{
+            int top =s.pop();
+            sortInsert(s,element);
+            s.push(top);
+            
         }
     }
 }
