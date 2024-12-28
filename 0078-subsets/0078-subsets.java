@@ -1,27 +1,29 @@
 class Solution {
 
-    // understand code and comment line acc. on weekends 
+    // Subset Recursive Solution
     public List<List<Integer>> subsets(int[] nums) {
-
-        int n=nums.length;
         
+        int n = nums.length;
+        List<Integer> ds = new ArrayList<>();
         List<List<Integer>> listOfLists = new ArrayList<>();
-
-// number of subsets are 2pow(n)
-
-        int subsets=1<<n;
-
-        for(int num=0;num<subsets;num++){
-            List<Integer> list1= new ArrayList<>();
-
-            for(int i=0;i<n;i++){
-                if((num&(1<<i))!=0){
-                    list1.add(nums[i]);
-                }
-            }
-            listOfLists.add(list1);
-        }
+        generateSubsets(0, ds, nums, n, listOfLists);
         return listOfLists;
-
     }
+
+    public static void generateSubsets(int ind, List<Integer> ds, int[] arr, int n, List<List<Integer>> listOfLists) {
+        if (ind == n) {
+            listOfLists.add(new ArrayList<>(ds));
+            return;
+        }
+
+        // Include the current element
+        ds.add(arr[ind]);
+        generateSubsets(ind + 1, ds, arr, n, listOfLists);
+        
+        // Exclude the current element
+        ds.remove(ds.size() - 1);
+        generateSubsets(ind + 1, ds, arr, n, listOfLists);
+    }
+
+    
 }
