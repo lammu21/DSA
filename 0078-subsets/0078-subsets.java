@@ -1,6 +1,7 @@
 class Solution {
 
     // Subset Recursive Solution
+
     public List<List<Integer>> subsets(int[] nums) {
         
         int n = nums.length;
@@ -9,7 +10,7 @@ class Solution {
         generateSubsets(0, ds, nums, n, listOfLists);
         return listOfLists;
     }
-
+// Debug Method til understand 
     public static void generateSubsets(int ind, List<Integer> ds, int[] arr, int n, List<List<Integer>> listOfLists) {
         if (ind == n) {
             listOfLists.add(new ArrayList<>(ds));
