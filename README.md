@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
 | [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
 | [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 ## Greedy
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
 | [0046-permutations](https://github.com/lammu21/DSA/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/lammu21/DSA/tree/master/0078-subsets) |
 ## Enumeration
@@ -150,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/lammu21/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0008-string-to-integer-atoi](https://github.com/lammu21/DSA/tree/master/0008-string-to-integer-atoi) |
 | [0020-valid-parentheses](https://github.com/lammu21/DSA/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
 | [0424-longest-repeating-character-replacement](https://github.com/lammu21/DSA/tree/master/0424-longest-repeating-character-replacement) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/lammu21/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Hash Table
