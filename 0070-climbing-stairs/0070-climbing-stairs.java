@@ -35,6 +35,25 @@ class Solution {
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Tabulation Approach
+//    public int climbStairs(int n) {
+//       return climbStairTab(n);
+//    }
+
+//   public int climbStairTab(int n){
+
+//     if (n <= 1) return 1;
+//     int [] dp= new int [n+1];
+//      dp[0]=1;
+//      dp[1]=1;
+//     for(int i =2;i<=n;i++){
+//         dp[i]=dp[i-1]+dp[i-2];
+//     }
+//     return dp[n];
+//    }
+
+
+//    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Spacee Optimization Approach
    public int climbStairs(int n) {
       return climbStairTab(n);
    }
@@ -42,14 +61,21 @@ class Solution {
   public int climbStairTab(int n){
 
     if (n <= 1) return 1;
-    int [] dp= new int [n+1];
-     dp[0]=1;
-     dp[1]=1;
+    // int [] dp= new int [n+1];
+    //  dp[0]=1;
+    int prev2=1;
+    //  dp[1]=1;
+    int prev=1;
     for(int i =2;i<=n;i++){
-        dp[i]=dp[i-1]+dp[i-2];
+        int current=prev+prev2;
+        prev2=prev;
+        prev=current;
     }
-    return dp[n];
+    return prev;
    }
+
+
+
 }
 
 
