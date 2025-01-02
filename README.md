@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/lammu21/DSA/tree/master/0009-palindrome-number) |
 | [0029-divide-two-integers](https://github.com/lammu21/DSA/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/lammu21/DSA/tree/master/0050-powx-n) |
+| [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/lammu21/DSA/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
 | [0367-valid-perfect-square](https://github.com/lammu21/Problem_Sloving/tree/master/0367-valid-perfect-square) |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
+| [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
 | [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 ## Greedy
@@ -215,5 +217,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
