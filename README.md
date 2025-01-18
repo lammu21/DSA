@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/lammu21/DSA/tree/master/0204-count-primes) |
 | [0213-house-robber-ii](https://github.com/lammu21/DSA/tree/master/0213-house-robber-ii) |
 | [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/lammu21/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [0455-assign-cookies](https://github.com/lammu21/DSA/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/lammu21/DSA/tree/master/0496-next-greater-element-i) |
 | [0540-single-element-in-a-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0540-single-element-in-a-sorted-array) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/lammu21/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/lammu21/DSA/tree/master/0213-house-robber-ii) |
 | [0410-split-array-largest-sum](https://github.com/lammu21/DSA/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/lammu21/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
 ## Greedy
 |  |
