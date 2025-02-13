@@ -30,40 +30,97 @@ class GFG {
 // User function Template for Java
 
 class Solution {
-    static int knapSack(int val[], int wt[], int capacity) {
+    
+    // Space Optimazation
+     static int knapSack(int val[], int wt[], int capacity) {
         // code here
         int n= wt.length;
         
-        int [][] dp= new int[n][capacity+1];
+        int [] cur= new int[capacity+1];
         
-        for(int row[] :dp){
-            Arrays.fill(row,-1);
+       for(int i=wt[0];i<=capacity;i++){
+           cur[i]=((int) i/wt[0])*val[0];
+       }
+        
+        for(int ind=1;ind<n;ind++){
+            for(int cap=0;cap<=capacity;cap++){
+                int notTaken=0+cur[cap];
+                int taken=Integer.MIN_VALUE;
+                
+                if(wt[ind]<=cap){
+                    taken=val[ind]+cur[cap-wt[ind]];
+                }
+                cur[cap]=Math.max(notTaken,taken);
+            }
         }
-        
-        return knapsackUtil(wt,val,n-1,capacity,dp);
+        return cur[capacity];
         
     }
     
-    static int knapsackUtil(int [] wt,int[] val,int ind, int W, int [][]dp){
-        if(ind==0){
-            return ((int)(W/wt[0]))*val[0];
+    
+    
+    
+    //   Tabulation
+    //   static int knapSack(int val[], int wt[], int capacity) {
+    //     // code here
+    //     int n= wt.length;
+        
+    //     int [][] dp= new int[n][capacity+1];
+        
+    //   for(int i=wt[0];i<=capacity;i++){
+    //       dp[0][i]=((int) i/wt[0])*val[0];
+    //   }
+        
+    //     for(int ind=1;ind<n;ind++){
+    //         for(int cap=0;cap<=capacity;cap++){
+    //             int notTaken=0+dp[ind-1][cap];
+    //             int taken=Integer.MIN_VALUE;
+                
+    //             if(wt[ind]<=cap){
+    //                 taken=val[ind]+dp[ind][cap-wt[ind]];
+    //             }
+    //             dp[ind][cap]=Math.max(notTaken,taken);
+    //         }
+    //     }
+    //     return dp[n-1][capacity];
+        
+    // }
+    
+     // Memoization
+    // static int knapSack(int val[], int wt[], int capacity) {
+    //     // code here
+    //     int n= wt.length;
+        
+    //     int [][] dp= new int[n][capacity+1];
+        
+    //     for(int row[] :dp){
+    //         Arrays.fill(row,-1);
+    //     }
+        
+    //     return knapsackUtil(wt,val,n-1,capacity,dp);
+        
+    // }
+    
+    // static int knapsackUtil(int [] wt,int[] val,int ind, int W, int [][]dp){
+    //     if(ind==0){
+    //         return ((int)(W/wt[0]))*val[0];
             
-        }
-        if(dp[ind][W]!=-1){
-            return dp[ind][W];
-        }
+    //     }
+    //     if(dp[ind][W]!=-1){
+    //         return dp[ind][W];
+    //     }
         
-        int notTaken =0+knapsackUtil(wt,val,ind-1,W,dp);
+    //     int notTaken =0+knapsackUtil(wt,val,ind-1,W,dp);
         
-        int taken=Integer.MIN_VALUE;
+    //     int taken=Integer.MIN_VALUE;
         
-        if(wt[ind]<=W){
-            taken= val[ind]+knapsackUtil(wt,val,ind,W-wt[ind],dp);
+    //     if(wt[ind]<=W){
+    //         taken= val[ind]+knapsackUtil(wt,val,ind,W-wt[ind],dp);
             
            
-        }
+    //     }
         
-         return dp[ind][W]=Math.max(notTaken,taken);
+    //      return dp[ind][W]=Math.max(notTaken,taken);
         
-    }
+    // }
 }
