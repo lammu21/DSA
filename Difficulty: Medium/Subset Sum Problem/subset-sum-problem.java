@@ -32,31 +32,44 @@ class GFG {
 
 class Solution {
 
-   static Boolean isSubsetSum(int arr[], int target) {
+    static Boolean isSubsetSum(int arr[], int target) {
+           // code here
         int n=arr.length;
-        int [][] memo= new int[n][target+1];
-        for(int row[]:memo){
+        
+        int [][] memo= new int [n][target+1];
+        
+        for(int [] row :memo){
             Arrays.fill(row,-1);
         }
-      return isSubsetSumHelper(n-1,arr,target,memo);
-        // code here
+        
+        return f(n-1,arr,target,memo);
+        
+     
     }
-    // static Boolean isSubsetSumHelper(int ind,int[] arr, int target int[][] memo){
-       static Boolean isSubsetSumHelper(int ind, int[] arr, int target, int[][] memo) {
+    static Boolean f(int ind,int [] arr,int target,int [][] memo){
         if(target==0) return true;
-        if(ind==0) return arr[0]==target;
+        if(ind==0){
+            return arr[0]==target;
+        }
         
         if(memo[ind][target]!=-1){
-            return memo[ind][target]==0 ? false:true;
+            // Mistake not used ternary operate
+            return memo[ind][target] ==0? false:true;
         }
         
-        boolean notTaken=isSubsetSumHelper(ind-1,arr,target,memo);
-        boolean taken=false;
+        boolean notTake=f(ind-1,arr,target,memo);
+        
+        // Mistake Not intiazed take if failes 
+        boolean take =false;
+        
         if(arr[ind]<=target){
-            taken=isSubsetSumHelper(ind-1,arr,target-arr[ind],memo);
+            // mistake added Arr[ind]
+         take=f(ind-1,arr,target-arr[ind],memo);
         }
-        memo[ind][target]=notTaken||taken?1:0;
         
-        return notTaken||taken;
+        // mistake
+       memo[ind][target]=notTake||take ?1:0;
+          
+        return notTake||take;
     }
 }
