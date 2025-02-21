@@ -31,45 +31,37 @@ class GFG {
 // User function Template for Java
 
 class Solution {
-
-    static Boolean isSubsetSum(int arr[], int target) {
-           // code here
-        int n=arr.length;
+    
+    // Tabulation
+      static Boolean isSubsetSum(int arr[], int target) {
+        // code here
+        int n= arr.length;
         
-        int [][] memo= new int [n][target+1];
+        boolean [][] dp= new boolean [n][target+1];
         
-        for(int [] row :memo){
-            Arrays.fill(row,-1);
+        for(int i=0;i<n;i++){
+            dp[i][0]=true;
         }
         
-        return f(n-1,arr,target,memo);
+        if(arr[0]<=target){
+            dp[0][arr[0]]=true;
+        }
         
-     
+        for(int ind=1;ind<n;ind++){
+            for(int tar=1;tar<=target;tar++){
+                
+                
+                 boolean notTaken=dp[ind-1][tar];
+                 
+                 boolean taken=false;
+                 if(arr[ind]<=tar){
+                     taken =dp[ind-1][tar-arr[ind]];
+                 }
+                 dp[ind][tar]=taken||notTaken;
+            }
+        }
+        return dp[n-1][target];
+        
     }
-    static Boolean f(int ind,int [] arr,int target,int [][] memo){
-        if(target==0) return true;
-        if(ind==0){
-            return arr[0]==target;
-        }
-        
-        if(memo[ind][target]!=-1){
-            // Mistake not used ternary operate
-            return memo[ind][target] ==0? false:true;
-        }
-        
-        boolean notTake=f(ind-1,arr,target,memo);
-        
-        // Mistake Not intiazed take if failes 
-        boolean take =false;
-        
-        if(arr[ind]<=target){
-            // mistake added Arr[ind]
-         take=f(ind-1,arr,target-arr[ind],memo);
-        }
-        
-        // mistake
-       memo[ind][target]=notTake||take ?1:0;
-          
-        return notTake||take;
-    }
+  
 }
