@@ -31,48 +31,60 @@ class GFG {
 
 
 class Solution {
-    // static int mod=(int) (Math.pow(10,9)+7)
     int countPartitions(int[] arr, int d) {
-            // code here
-        int n = arr.length;
+        // code here
         int totSum=0;
+        int n=arr.length;
         
-        for(int i =0;i<arr.length;i++){
-			totSum+=arr[i];
-		}
-            if((totSum-d)<0 ||(totSum-d)%2==1) return 0;
+        for(int i=0;i<n;i++){
             
-            int S2=(totSum-d)/2;
-            int dp[][] = new int [n][S2+1];
+            totSum+=arr[i];
             
-            for(int row[] :dp)
-                Arrays.fill(row,-1);
-        return f(n-1,S2,arr,dp);
-    }
-    static int f(int ind, int target,int[] arr,int [][]dp){
-        if(ind==0){
-            if(target ==0&&arr[0]==0){
-                return 2;
-            }
-            if(target==0||target==arr[0]){
-                return 1;
-            }
+        }
+        
+        if((totSum-d)%2!=0 ||totSum<d){
             return 0;
         }
         
-        if(dp[ind][target]!=-1){
-            return dp[ind][target];
+        int target= (totSum-d)/2;
+        
+        if(target<0){
+            return 0;
         }
         
-        int notTaken=f(ind-1,target,arr,dp);
+        int [][] dp= new int [n][target+1];
         
-        int taken=0;
-        if(arr[ind]<=target){
-            taken=f(ind-1,target-arr[ind],arr,dp);
+        for(int [] row :dp){
+            Arrays.fill(row,-1);
         }
-        return dp[ind][target]=notTaken+taken;
-    }
-    
-    
-    
+        
+        return func(n-1,target,arr,dp);
+}
+ int func(int ind,int target,int [] arr,int [][]dp){
+     
+     if(ind==0){
+         if(target==0&& arr[0]==0) return 2;
+         
+         if(target==0||arr[0]==target) return 1;
+         
+         return 0;
+         
+     }
+     
+     
+     if(dp[ind][target]!=-1){
+         return dp[ind][target];
+     }
+     
+     int notTaken= func(ind-1,target,arr,dp);
+     
+     int taken=0;
+     if(arr[ind]<=target){
+         taken=func(ind-1,target-arr[ind],arr,dp);
+     }
+     
+     return dp[ind][target]=taken+notTaken;
+     
+ }
+
 }
