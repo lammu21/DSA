@@ -43,15 +43,15 @@ class Solution {
             
         }
         
-        if((totSum-d)%2!=0 ||totSum<d){
+        if((totSum-d)%2!=0 ||totSum-d<0){
             return 0;
         }
         
         int target= (totSum-d)/2;
         
-        if(target<0){
-            return 0;
-        }
+        // if(target<0){
+        //     return 0;
+        // }
         
         int [][] dp= new int [n][target+1];
         
