@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/lammu21/DSA/tree/master/0009-palindrome-number) |
 | [0029-divide-two-integers](https://github.com/lammu21/DSA/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/lammu21/DSA/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/lammu21/DSA/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/lammu21/DSA/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/lammu21/DSA/tree/master/0231-power-of-two) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
+| [0062-unique-paths](https://github.com/lammu21/DSA/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/lammu21/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/lammu21/DSA/tree/master/0213-house-robber-ii) |
@@ -230,4 +232,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/lammu21/DSA/tree/master/1013-fibonacci-number) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/lammu21/DSA/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
