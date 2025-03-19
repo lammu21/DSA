@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/lammu21/Problem_Sloving/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/lammu21/Problem_Sloving/tree/master/0035-search-insert-position) |
 | [0046-permutations](https://github.com/lammu21/DSA/tree/master/0046-permutations) |
+| [0063-unique-paths-ii](https://github.com/lammu21/DSA/tree/master/0063-unique-paths-ii) |
 | [0078-subsets](https://github.com/lammu21/DSA/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/lammu21/Problem_Sloving/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0136-single-number](https://github.com/lammu21/DSA/tree/master/0136-single-number) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/lammu21/DSA/tree/master/0022-generate-parentheses) |
 | [0062-unique-paths](https://github.com/lammu21/DSA/tree/master/0062-unique-paths) |
+| [0063-unique-paths-ii](https://github.com/lammu21/DSA/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/lammu21/DSA/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/lammu21/DSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/lammu21/DSA/tree/master/0213-house-robber-ii) |
@@ -236,4 +238,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/lammu21/DSA/tree/master/0062-unique-paths) |
+## Matrix
+|  |
+| ------- |
+| [0063-unique-paths-ii](https://github.com/lammu21/DSA/tree/master/0063-unique-paths-ii) |
 <!---LeetCode Topics End-->
